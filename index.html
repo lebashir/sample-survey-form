@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title id=>Sample Survey Form</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <main id="main">
+        <div class="container-fluid">
+            <h1 class="text-center"id="title">What do you think of my Portfolio?</h1>
+            <p class="text-center" id="description">Please fill out this short survey form to help me out.</p>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="What is your name?" required>
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input type="email" name="email" class="form-control" id="email" placeholder="What is your email?" required>
+                    <small id="emailHelp" class="form-text">I will never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number">Age</label>
+                    <input type="number" name="age" id="number" class="form-control" min="10" max="130" placeholder="Age" required/>
+                </div>
+                <div class="form-group">
+                    <label id="dropdown-label" for="job-type">What kind of position are you looking to fill?</label>
+                    <select class="form-control" id="dropdown">
+                        <option>Full-time</option>
+                        <option>Part-time</option>
+                        <option>Contractor</option>
+                        <option>Intern</option>
+                        <option>Seasonal</option>
+                    </select>
+                </div>
+                <div class="form-check">
+                    <p><strong>Do you like how this survey form looks?</strong></p>
+                    <label><input class="form-check-input" type="radio" name="recommend" id="recommend-sure" value="Definitely" required>
+                        Definitely
+                    </label>
+                    <label> <input class="form-check-input" type="radio" name="recommend"id="recommend-maybe" value="Maybe" required>Maybe
+                    </label>
+                    <label><input class="form-check-input" type="radio" name="recommend" id="recommend-no" value="NO" required>
+                        No
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label id="favorite-label" for="favorite-feature">What do you like the most about my portfolio?</label>
+                    <select class="form-control" id="favorite-feature" required>
+                        <option>The Design</option>
+                        <option>Case Study Description</option>
+                        <option>Front-End Work</option>
+                        <option>Back-End Work</option>
+                        <option>This Survey</option>
+                        <option>My Sparkling Personality!</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p><strong>What would you like to see me work on ?<strong></strong></p>
+                    <div class="form-check">
+                        <input name="work"value="front-end-projects" id="front-end-projects" class="form-check-input" type="checkbox" ></input>
+                        <label class="form-check-label" for="front-end-projects">Front-End Projects</label>
+                    </div>
+                    <div class="form-check">
+                        <input name="work"value="back-end-projects" id="back-end-projects" class="form-check-input" type="checkbox" ></input>
+                        <label class="form-check-label" for="back-end-projects">Back-End Projects</label>
+                    </div>
+                    <div class="form-check">
+                        <input name="work"value="full-stack-projects" id="full-stack-projects" class="form-check-input" type="checkbox" ></input>
+                        <label class="form-check-label" for="full-stack-projects">Full-Stack Projects</label>
+                    </div>
+                    <div class="form-check">
+                        <input name="work"value="tutorials" id="tutorials" class="form-check-input" type="checkbox" ></input>
+                        <label class="form-check-label" for="tutorials">Tutorials</label>
+                    </div>
+                    <div class="form-check">
+                        <input name="work"value="documentation" id="documentation" class="form-check-input" type="checkbox" ></input>
+                        <label class="form-check-label" for="documentation">Documentation</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="questions-comments">Please share any questions,comments, or concerns you may have.</label>
+                        <textarea class="form-control" id="questions-comments" placeholder="Leave comments here..."rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" id="submit" class="btn btn-block btn-success">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
